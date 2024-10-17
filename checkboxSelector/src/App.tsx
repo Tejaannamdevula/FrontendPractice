@@ -9,7 +9,7 @@ function App() {
 console.log(checkedItems)
 
 const handleChange = (id:string)=>{
-  setCheckedItems(prev=>( {...prev ,[id] : !prev[id]}) )
+  setCheckedItems(prev=>( {...prev ,[id] : !prev[id]}) ) // use State takes previous state as input to call back  function 
 }
 
 const handleSelectAll = () => {
